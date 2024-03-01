@@ -1,0 +1,177 @@
+@font-face {
+    font-family: titleFont;
+    src: url(./fonts/Super\ Bubble.ttf);
+}
+
+@font-face {
+    font-family: font1;
+    src: url(./fonts/Rainbow\ Season.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEEDE7;
+    font-family: font1;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: titleFont;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.skillContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.skillNameContainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.skillValueContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 1000px;  
+    margin: 5px 295px 40px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 40px;
+}
+
+label {
+    display: flex;
+    padding: 5px;
+}
+
+input {
+    font-family: font1;
+    font-size: 20px;
+    padding: 13px;
+    width: 250px;
+    height: 2vw; 
+    outline: none;
+    box-sizing: border-box;   
+    box-shadow: 8px 8px 16px #cacaca, -8px -8px 16px #f6f6f6;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+input:hover {
+    border: white;
+    border: none;
+	box-shadow: 11px 11px 22px #606060,-11px -11px 22px #ffffff;
+	font-size: 15px;
+	transition: 500ms;
+}
+
+input::after {
+    border: white;
+}
+
+button {
+	width: 90px;
+	height: 30px;
+	cursor: pointer;
+	background: #e0e0e0;
+    font-family: font1;
+	margin: 10px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 19px 19px 38px #969696, -19px -19px 38px #ffffff;
+	color: #aaaaaa;
+	font-size: 16px;
+}
+
+button:hover {
+	box-shadow: 11px 11px 22px #606060,-11px -11px 19px #ffffff;
+	font-size: 15px;
+    font-family: font1;
+    color: #E56997;
+	text-shadow: 0px 0px 10px #969696;
+	transition: 500ms;
+}
+
+button:focus {
+	outline: none;
+}
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 40px 295px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 35px;
+}
+
+.skillName {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.skillProgressBar {
+    height: 20px;
+    width: 300%;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+    overflow: hidden;
+}
+
+.skillProgress {
+    height: 100%;
+    width: 100%;
+    background-color: #00bfff;
+}
+
+.skillValue {
+    padding: 15px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.btnRemove {
+    width: 90px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.btnRemove:hover {
+    transition: 500ms;
+    color: #07BB9C;
+}
+
